@@ -1,0 +1,188 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url(FondoCodigo7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.navegacion{
+	background: rgb(211, 25, 0);
+	padding-top: 1px;
+}
+
+
+.menu {cursor: pointer;}
+
+
+.navegacion ul {list-style: none;}
+
+
+.menu > li{display: inline-block;}
+
+
+.menu > li > a{
+	font-size: 15px;
+	display: block;
+	padding: 15px 20px;
+	color: wheat;
+	font-family: 'open sans';
+	text-decoration: none;
+	padding: 15px  170px;
+}
+
+
+.menu li a:hover{
+	color: black;
+	transition: all .9s;
+}
+
+
+.submenu{
+	position: absolute;
+	background: rgba(211, 25, 0, 0.849);
+	right: 0px;
+	width: 33%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 4.5s;
+}
+
+
+.submenu li a{
+	display: block;
+	padding: 18px;
+	color: white;
+	font-family:'open sans';
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/* estilo del crud*/
+.div-titulo{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.div-titulo h2{
+	font-weight: 300;
+}
+
+.contenedor{
+	width: 100%;
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Estilo del Formulario*/
+.contenedor .div-formulario{
+	width: 25%;
+	text-align: center;
+    margin: 10px;
+	margin: 45px 20px;
+	background-color: rgb(223, 184, 112);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 20px 20px rgba(0, 0, 0, 0.658);
+}
+
+.contenedor .div-formulario h2{
+	margin: 2px;
+	font-weight: 300;
+	font-size: 26px;
+	color: black;
+}
+
+.contenedor .div-formulario form{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor .div-formulario form input,
+.contenedor .div-formulario form button{
+	width: 60%;
+	padding: 3% 10px;
+	margin: 5px 10px;
+	border-radius: 4px;
+}
+
+.div-formulario form button:hover{
+	cursor: pointer;
+	background:  orangered;
+	color: white;
+	transition: all 1s;
+}
+
+
+/*Estilo Listado*/
+.contenedor .div-listado{
+	width: 55%;
+	text-align: center;
+	height: calc(100% - 50px);
+	margin: 15px 15px;
+	background-color: rgb(223, 184, 112);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 25px 25px rgba(0, 0, 0, 0.479);
+}
+
+.contenedor .div-listado h2{
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 2em;
+	color: black;
+}
+
+.contenedor .div-listado .div-Personas {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+	padding: 0 30px;
+}
+
+.contenedor .div-listado .div-Personas p {
+	margin: 10px 0;
+	font-size: 1em;
+	color: blue;
+}
+
+hr{
+	width: 100%;
+	height: 1px;
+}
+
+.btn-editar{
+    background-color: green;
+    border: 1px;
+}
+.btn-eliminar{
+    background-color: red;
+    border: 1px;
+}

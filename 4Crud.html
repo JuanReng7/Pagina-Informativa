@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        h1
+         {text-align: center;
+          color: wheat;
+          margin-top: 1px;}
+
+          .h2{
+            font-size: 18px;
+          }
+
+        input
+         {text-align: center;}
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina del CRUD.</title>
+    <link rel="stylesheet" type="text/css" href="Css/Estilo-Crud.css">
+    <script src="https://kit.fontawesome.com/aa3f71ea5b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <h1>Pagina del CRUD</h1>
+            <ul class="menu">
+                <li><a class="izquierda" href="3Pagina-Principal.html"> Inicio <i class="fa-solid fa-house"> </i></a></li>
+                <li><a class="media" href="4crud.html">CRUD</a></li>
+                <li><a> Menu de Opciones <i class="fa-solid fa-bars"></i> </a>
+                    <ul class="submenu">
+                        <li><a href="5Componentes.html">Componentes de las Computadoras.</a></li>
+                        <li><a href="6Funciones.html">Funciones de los Componentes.</a></li>
+                        <li><a href="7Fallas.html">Fallas mas Comunes.</a></li>
+                        <li><a href="index.html">Salir de la Pagina.</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="div-titulo">
+        <h2>CRUD de la Pagina Informativa</h2>
+    </div>
+
+
+    <div class="contenedor">
+
+        <div class="div-formulario">
+            <h2>Formulario.</h2>
+
+            <form action="#" id="formulario">
+                <input type="text"  id="nombre" placeholder="Ingrese nombre">
+                <input type="text"  id="apellido" placeholder="Ingrese Apellido">
+                <input type="number"  id="cedula" placeholder="Ingrese Cedula">
+                <button type="submit" id="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+        <div class="div-listado">
+            <h2>Listado de Personas</h2>
+            <div class="div-Personas">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="apps_4Crud.js"></script>
+
+</body>
+</html>

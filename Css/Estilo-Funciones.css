@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url(FondoCodigo4.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.navegacion{
+	background: gray;
+	padding-top: 1px;
+}
+
+
+.menu {cursor: pointer;}
+
+
+.navegacion ul {list-style: none;}
+
+
+.menu > li{display: inline-block;}
+
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: wheat;
+	font-family: 'open sans';
+	text-decoration: none;
+	padding: 15px  175px;
+}
+
+
+.menu li a:hover{
+	color: black;
+	transition: all .9s;
+}
+
+
+.submenu{
+	position: absolute;
+	background: rgba(128, 128, 128, 0.816);
+	right: 0px;
+	width: 33%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 4.5s;
+}
+
+
+.submenu li a{
+	display: block;
+	padding: 25px;
+	color: white;
+	font-family:'open sans';
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+.parrafo{
+	z-index: 1;
+	width: 700px;
+	height: 1700px;
+	padding: 3px 2px;
+	font-size: 15px;
+	line-height: 1.5;
+	background: rgba(245, 222, 179, 0.846);
+	margin-top: 88px;
+	box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.727);
+	border-radius: 5px;
+	margin: 50px 18%;
+	text-align: justify;
+ }
+ .parrafo img{
+	border-radius: 5px;
+	float: left;
+	margin-right: 12px;
+ }

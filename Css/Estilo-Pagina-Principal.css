@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url(FondodelSaber.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.navegacion{
+	background: rgb(127, 157, 255);
+	padding-top: 1px;
+}
+
+
+.menu {cursor: pointer;}
+
+
+.navegacion ul {list-style: none;}
+
+
+.menu > li{display: inline-block;}
+
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: wheat;
+	font-family: 'open sans';
+	text-decoration: none;
+	padding: 15px  175px;
+}
+
+
+.menu li a:hover{
+	color: black;
+	transition: all .9s;
+}
+
+
+.submenu{
+	position: absolute;
+	background: rgba(127, 157, 255, 0.854);
+	right: 0px;
+	width: 33%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 4.5s;
+}
+
+
+.submenu li a{
+	display: block;
+	padding: 22px;
+	color: white;
+	font-family:'open sans';
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}

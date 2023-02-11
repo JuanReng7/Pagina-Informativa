@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url(FondoInicio.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+
+.formulario > a{
+	background: #fff;
+	margin-top: 100px;
+	border-radius: 8px;
+    width: 20%;
+    height: 60px;
+}
+
+a:hover{
+	border-radius: 15px;
+	background: rgb(0, 255, 115);
+	transition: 2s;
+}
