@@ -12,6 +12,7 @@ body{
 .navegacion{
 	background: rgb(127, 157, 255);
 	padding-top: 1px;
+	min-width: 1100px;
 }
 
 
@@ -45,9 +46,10 @@ body{
 	background: rgba(127, 157, 255, 0.854);
 	right: 0px;
 	width: 33%;
-	visibility: hidden;
+	content-visibility: auto;
 	opacity: 0;
-	transition: opacity 4.5s;
+	transition: opacity 3.1s;
+	min-width: 300px;
 }
 
 

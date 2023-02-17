@@ -12,6 +12,7 @@ body{
 .navegacion{
 	background: rgb(211, 25, 0);
 	padding-top: 1px;
+	min-width: 1100px;
 }
 
 
@@ -45,16 +46,17 @@ body{
 	position: absolute;
 	background: rgba(211, 25, 0, 0.849);
 	right: 0px;
-	width: 33%;
-	visibility: hidden;
+	width: 38%;
+	content-visibility: auto;
 	opacity: 0;
-	transition: opacity 4.5s;
+	transition: opacity 3.1s;
+	min-width: 300px;
 }
 
 
 .submenu li a{
 	display: block;
-	padding: 18px;
+	padding: 14px;
 	color: white;
 	font-family:'open sans';
 	text-decoration: none;
@@ -69,32 +71,22 @@ body{
 }
 
 
-/* estilo del crud*/
-.div-titulo{
-	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.div-titulo h2{
-	font-weight: 300;
-}
-
 .contenedor{
 	width: 100%;
 	height: calc(100vh - 100px);
-	display: flex;
+	display: block;
 	justify-content: center;
 }
 
 
 /* Estilo del Formulario*/
 .contenedor .div-formulario{
-	width: 25%;
+	width: 40%;
+	position: relative;
+	left: 400px;
 	text-align: center;
     margin: 10px;
-	margin: 45px 20px;
+	margin: 200px 20px;
 	background-color: rgb(223, 184, 112);
 	display: flex;
 	flex-direction: column;
@@ -102,6 +94,8 @@ body{
 	align-items: center;
 	border-radius: 10px;
 	box-shadow: 20px 20px rgba(0, 0, 0, 0.658);
+	min-width: 400px;
+	min-height: 500px;
 }
 
 .contenedor .div-formulario h2{
@@ -109,6 +103,7 @@ body{
 	font-weight: 300;
 	font-size: 26px;
 	color: black;
+
 }
 
 .contenedor .div-formulario form{
@@ -138,16 +133,21 @@ body{
 
 /*Estilo Listado*/
 .contenedor .div-listado{
-	width: 55%;
+	width: 50%;
+	position: relative;
+	left: 350px;
 	text-align: center;
 	height: calc(100% - 50px);
 	margin: 15px 15px;
+	margin-top: 100px;
 	background-color: rgb(223, 184, 112);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 10px;
 	box-shadow: 25px 25px rgba(0, 0, 0, 0.479);
+	min-width: 500px;
+	min-height: 700px;
 }
 
 .contenedor .div-listado h2{
@@ -155,6 +155,8 @@ body{
 	font-weight: 300;
 	font-size: 2em;
 	color: black;
+	min-width: 500px;
+	max-width: 500px;
 }
 
 .contenedor .div-listado .div-Personas {
