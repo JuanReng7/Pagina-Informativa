@@ -30,6 +30,11 @@ input[type="text"]{
 	width: 70%;
 	padding: 7px;	
 }
+input[type="email"]{
+	font-size: 15px;
+	width: 70%;
+	padding: 7px;	
+}
 input[type="password"]{
 	font-size: 15px;
 	width: 67%;
