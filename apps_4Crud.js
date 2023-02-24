@@ -4,6 +4,7 @@ const objPersona = {
     id: '',
     nombre: '', 
     apellido: '',
+    edad:'',
     cedula: ''
 }
 
@@ -12,6 +13,7 @@ let editando = false;
 const formulario = document.querySelector('#formulario');
 const nombreImput = document.querySelector('#nombre');
 const apellidoImput = document.querySelector('#apellido');
+const edadImput = document.querySelector('#edad');
 const cedulaImput = document.querySelector('#cedula');
 const btnAgregar = document.querySelector('#btnAgregar');
 
@@ -21,7 +23,7 @@ function validarFormulario(e) {
     e.preventDefault();
 
 
-    if(nombreImput.value === '' || apellidoImput.value === '' || cedulaImput.value === '') {
+    if(nombreImput.value === '' || apellidoImput.value === '' || edadImput.value === ''|| cedulaImput.value === '') {
         alert('todos los campos son obligatorios llenarlos.');
         return;
     }
@@ -32,9 +34,10 @@ function validarFormulario(e) {
     } else {
         objPersona.id = Date.now();
         objPersona.nombre = nombreImput.value;
-        objPersona.apellido = apellidoImput.value;
+        objPersona.apellido = apellidoImput.value; 
+        objPersona.edad = edadImput.value;
         objPersona.cedula = cedulaImput.value;
-       
+
 
         agregarPersona();
     }
@@ -53,7 +56,8 @@ function agregarPersona() {
 function limpiarobjeto() {
     objPersona.id = '';
     objPersona.nombre = '';
-    objPersona.apellido = '';
+    objPersona.apellido = ''; 
+    objPersona.edad = '';
     objPersona.cedula = '';
 }
 
@@ -64,10 +68,10 @@ function mostrarPersonas(){
     const divPersonas = document.querySelector('.div-Personas');
 
     listaPersonas.forEach( persona => {
-        const {id, nombre, apellido, cedula} = persona;
+        const {id, nombre, apellido, edad, cedula } = persona;
 
         const parrafo = document.createElement('p');
-        parrafo.textContent = `${id} - ${nombre} - ${apellido} - ${cedula} - `;
+        parrafo.textContent = `${id} - ${nombre}  ${apellido} - ${edad} -  ${cedula} `;
         parrafo.dataset.id = id; 
 
         const editarBoton = document.createElement('button');
@@ -92,10 +96,11 @@ function mostrarPersonas(){
 }
 
 function cargartPersona(persona){
-    const {id, nombre, apellido, cedula} = persona;
+    const {id, nombre, apellido, edad, cedula} = persona;
     
     nombreImput.value = nombre;
     apellidoImput.value = apellido;
+    edadImput.value = edad;
     cedulaImput.value = cedula;
 
     objPersona.id = id;
@@ -108,14 +113,16 @@ function cargartPersona(persona){
 function editarPersona(){
     objPersona.nombre = nombreImput.value;
     objPersona.apellido = apellidoImput.value;
+    objPersona.edad = edadImput.value;
     objPersona.cedula = cedulaImput.value;
-
+    
     listaPersonas.map (persona => {
 
         if(persona.id === objPersona.id) {
             persona.id = objPersona.id;
             persona.nombre = objPersona.nombre;
             persona.apellido = objPersona.apellido;
+            persona.edad = objPersona.edad;
             persona.cedula = objPersona.cedula;
         }
     });
