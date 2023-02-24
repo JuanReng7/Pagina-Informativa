@@ -145,6 +145,7 @@ function eliminartpersona(id){
     mostrarPersonas();
 }
 
+
 function limpiarHTML(){
     const divPersonas = document.querySelector('.div-Personas');
     while(divPersonas.firstChild){
