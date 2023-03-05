@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	background: url(FondoCodigo7.jpg);
+	background: url(FondoCodigo3.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -10,7 +10,7 @@ body{
 }
 
 .navegacion{
-	background: rgb(211, 25, 0);
+	background:teal;
 	padding-top: 1px;
 	min-width: 1100px;
 }
@@ -32,7 +32,9 @@ body{
 	color: wheat;
 	font-family: 'open sans';
 	text-decoration: none;
-	padding: 15px  170px;
+	padding: 15px  160px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -44,7 +46,7 @@ body{
 
 .submenu{
 	position: absolute;
-	background: rgba(211, 25, 0, 0.849);
+	background: rgba(0, 128, 128, 0.868);;
 	right: 0px;
 	width: 38%;
 	content-visibility: auto;
@@ -62,6 +64,7 @@ body{
 	text-decoration: none;
 	text-align: center;
 	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -86,8 +89,8 @@ body{
 	left: 400px;
 	text-align: center;
     margin: 10px;
-	margin: 200px 20px;
-	background-color: rgb(223, 184, 112);
+	margin: 150px 20px;
+	background: rgb(68, 166, 177);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -141,7 +144,7 @@ body{
 	height: calc(100% - 50px);
 	margin: 15px 15px;
 	margin-top: 100px;
-	background-color: rgb(223, 184, 112);
+	background: rgb(68, 166, 177);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -173,7 +176,8 @@ body{
 .contenedor .div-listado .div-Personas p {
 	margin: 10px 0;
 	font-size: 1em;
-	color: blue;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 hr{
